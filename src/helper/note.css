@@ -1,0 +1,63 @@
+/*
+1.yol
+const Language = ({lang})=>{
+
+    console.log(lang);
+    return(
+        <div>
+         <h3>language</h3>
+        </div>
+    )
+};
+
+export default Language;
+
+const Card = ()=>{
+
+    
+    return (
+      <Container className="rounded-4 mt-3" style={{ background: "orange" }}>
+        <h1>Language</h1>
+        {data.map((lang)=>{
+            return(
+                <Language language={lang} />
+            )
+        })}
+        
+      </Container>
+    );
+};
+
+export default Card;
+
+2.yol spread ile 
+
+const Card = ()=>{
+
+    return (
+      <Container className="rounded-4 mt-3" style={{ background: "orange" }}>
+        <h1>Language</h1>
+        {data.map((lang,index)=>{
+            return(
+                <Language {...lang} key={index} />
+            )
+        })}
+        
+      </Container>
+    );
+};
+
+export default Card;
+
+const Language = ({name,img,options})=>{
+
+    return(
+        <div>
+         <h3>language</h3>
+        </div>
+    )
+};
+
+export default Language;
+
+*/

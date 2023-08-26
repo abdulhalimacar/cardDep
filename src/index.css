@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(128, 105, 64);
+  height: 100vh;
+}
+
+/*
+
+uygulamadaki tüm stylingler burada verilir
+
+body nin yüksekliği olmazsa nasıl bir problem yaşarız?
+ortalamada problem olabilir o yüzden height değerine 100vh verdik 
+
+bu css dosyasını index.js de import ettik 
+
+*/
+
+/*language styling component*/
+/*hover vesaire vereceğiz*/
+/*üzerine geldiğimizde box shadow vereceğiz ve transitionlar vereceğiz*/
+/*lang-logo ve lang-card verdik*/
+
+.lang-card:hover{
+  box-shadow: 3px 3px 10px 5px rgba(0,0,0, 0.5);
+}
+
+/*resimleri büyütelim*/
+
+.lang-logo{
+  transition: transform 0.5s;
+}
+
+.lang-card:hover .lang-logo{/*cardın hoverında logoyu büyüt dedik burada*/
+  transform: scale(1.2);
+}
